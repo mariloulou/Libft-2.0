@@ -6,13 +6,13 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/22 08:15:07 by mcassar           #+#    #+#             */
-/*   Updated: 2017/08/22 08:15:36 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/08/30 08:15:47 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../headers/libft.h"
 
-
-void	*ft_memset(void *str, int c, size_t n)
+void	*ft_memset(char *str, int c, size_t n)
 {
 	while (n > 0)
 	{
