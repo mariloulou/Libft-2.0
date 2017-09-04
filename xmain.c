@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   xmain.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/22 08:15:07 by mcassar           #+#    #+#             */
-/*   Updated: 2017/08/30 10:46:51 by mcassar          ###   ########.fr       */
+/*   Created: 2017/08/30 11:13:22 by mcassar           #+#    #+#             */
+/*   Updated: 2017/09/03 15:51:39 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+#include <string.h>
+#include "headers/libft.h"
+#include <stdio.h>
 
-void	*ft_memset(char *str, int c, size_t n)
+int	main(void)
 {
-	unsigned int	i;
-	char			*s;
+	char	s1[] = "";
+	char	*src = "";
 
-	i = 0;
-	s = str;
-	while (i < n)
-	{
-		str[i] = c;
-		i++;
-	}
-	return (s);
+	printf("%i\n", memcmp(s1, src, 40));
+	printf("%i", ft_memcmp(s1, src, 40));
+	return (0);
 }
