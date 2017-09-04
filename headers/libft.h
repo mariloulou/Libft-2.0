@@ -6,7 +6,7 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/22 08:17:11 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/03 16:00:22 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/04 09:19:44 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
+char	*ft_strcpy(char *dst, const char *src);
+char	*ft_strncpy(char *dst, const char *src, size_t n);
 char	*ft_strdup(const char *s1);
 char	*ft_itoa_base(int nb, int base);
 

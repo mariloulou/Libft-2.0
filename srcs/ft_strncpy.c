@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   xmain.c                                            :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/30 11:13:22 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/04 09:38:59 by mcassar          ###   ########.fr       */
+/*   Created: 2017/09/04 09:16:19 by mcassar           #+#    #+#             */
+/*   Updated: 2017/09/04 11:39:17 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include "headers/libft.h"
-#include <stdio.h>
+#include "../headers/libft.h"
 
-int	main(void)
+char *ft_strncpy(char *dst, const char *src, size_t n)
 {
-	char	s1[30];
-	char	s2[30];
-	char	*src = "0123456789";
+	char *tmp;
 
-	strncpy(s1, src, 30);
-	printf("%s\n-----\n", s1);
-	ft_strncpy(s2, src, 30);
-	printf("%s", s2);
-	return (0);
+	tmp = dst;
+	while (*src && n > 0)
+	{
+		*dst++ = *src++;
+		n--;;
+	}
+	while (n > 0)
+	{
+		*dst++ = '\0';
+		n--;
+	}
+	return(tmp);
 }
