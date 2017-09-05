@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/04 13:01:38 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/05 08:29:33 by mcassar          ###   ########.fr       */
+/*   Created: 2017/09/05 08:22:40 by mcassar           #+#    #+#             */
+/*   Updated: 2017/09/05 08:30:07 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../headers/libft.h"
 
-char *ft_strcat(char *s1, const char *s2)
+char *ft_strncat(char *s1, const char *s2, size_t n)
 {
-	int i;
-	int j;
+	size_t i;
+	size_t j;
 
-	i = ft_strlen(s1);
+	i = ft_strlen(s1);;
 	j = 0;
-	while (s2[j])
+	while (s2[j] && j < n)
 	{
 		s1[i] = s2[j];
 		i++;
