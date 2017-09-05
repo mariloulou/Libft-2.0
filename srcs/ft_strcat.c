@@ -6,13 +6,13 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/04 13:01:38 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/05 08:29:33 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/05 10:57:49 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../headers/libft.h"
 
-char *ft_strcat(char *s1, const char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	int i;
 	int j;
@@ -26,5 +26,5 @@ char *ft_strcat(char *s1, const char *s2)
 		j++;
 	}
 	s1[i] = '\0';
-	return(s1);
+	return (s1);
 }

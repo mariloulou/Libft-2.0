@@ -6,7 +6,7 @@
 #    By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/30 09:48:52 by mcassar           #+#    #+#              #
-#    Updated: 2017/09/05 08:34:15 by mcassar          ###   ########.fr        #
+#    Updated: 2017/09/05 10:50:22 by mcassar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,8 @@ SRCSLIST =	ft_bitoi.c \
 			ft_strcat.c \
 			ft_strncat.c \
 			ft_strlcat.c \
+			ft_strchr.c \
+			ft_strrchr.c \
 			ft_strcpy.c \
 			ft_strncpy.c \
 			ft_strdup.c \
