@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   xmain.c                                            :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/30 11:13:22 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/06 13:04:01 by mcassar          ###   ########.fr       */
+/*   Created: 2017/09/05 11:07:15 by mcassar           #+#    #+#             */
+/*   Updated: 2017/09/06 09:29:33 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include "headers/libft.h"
-#include <stdio.h>
+#include "../headers/libft.h"
 
-int	main(void)
+char	*ft_strstr(const char *big, const char *little)
 {
-	char	*s1 = "Coucou";
-	char	*s2 = "";
-	char	*src = "";
+	int i;
+	int j;
+	int savei;
 
-	printf("%d\n-----\n", ft_atoi(s2));
-	printf("%d", ft_atoi(s2));
+	i = 0;
+	j = 0;
+	if (little[j] == '\0')
+		return ((char *)big);
+	while (big[i])
+	{
+		if (big[i] == little[j])
+		{
+			savei = i;
+			while (big[i++] == little[j++])
+				if (little[j] == '\0')
+					return ((char *)big + savei);
+			j = 0;
+			i = savei + 1;
+		}
+		i++;
+	}
 	return (0);
 }

@@ -1,26 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   xmain.c                                            :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/30 11:13:22 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/06 13:04:01 by mcassar          ###   ########.fr       */
+/*   Created: 2017/09/06 11:31:02 by mcassar           #+#    #+#             */
+/*   Updated: 2017/09/06 13:31:23 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include "headers/libft.h"
-#include <stdio.h>
-
-int	main(void)
+int	ft_atoi(char *str)
 {
-	char	*s1 = "Coucou";
-	char	*s2 = "";
-	char	*src = "";
+	int i;
+	int n;
+	int ret;
 
-	printf("%d\n-----\n", ft_atoi(s2));
-	printf("%d", ft_atoi(s2));
-	return (0);
+	i = 0;
+	ret = 0;
+	while ((str[i] >= 9  && str[i] <= 13) || str[i] == 32)
+		i++;
+	if (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			n = 1;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		ret = ret * 10;
+		ret = ret + (str[i] - 48);
+		i++;
+	}
+	if (n == 1)
+		return(-ret);
+	return(ret);
 }

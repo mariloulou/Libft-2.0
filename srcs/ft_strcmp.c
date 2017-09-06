@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   xmain.c                                            :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/30 11:13:22 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/06 13:04:01 by mcassar          ###   ########.fr       */
+/*   Created: 2017/09/06 10:03:09 by mcassar           #+#    #+#             */
+/*   Updated: 2017/09/06 10:22:43 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include "headers/libft.h"
-#include <stdio.h>
-
-int	main(void)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	char	*s1 = "Coucou";
-	char	*s2 = "";
-	char	*src = "";
-
-	printf("%d\n-----\n", ft_atoi(s2));
-	printf("%d", ft_atoi(s2));
-	return (0);
+	if (*s1 == '\0' && *s2 == '\0')
+		return(0);
+	while (*s1 && *s2 && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }

@@ -6,7 +6,7 @@
 #    By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/30 09:48:52 by mcassar           #+#    #+#              #
-#    Updated: 2017/09/05 10:50:22 by mcassar          ###   ########.fr        #
+#    Updated: 2017/09/06 13:04:54 by mcassar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,8 @@ NAME = libft.a
 OPTIONS = -c -Wall -Wextra -Werror
 
 SRCSDIR = srcs/
-SRCSLIST =	ft_bitoi.c \
+SRCSLIST =	ft_atoi.c \
+			ft_bitoi.c \
 			ft_bzero.c \
 			ft_itoa_base.c \
 			ft_memchr.c \
@@ -30,10 +31,14 @@ SRCSLIST =	ft_bitoi.c \
 			ft_strlcat.c \
 			ft_strchr.c \
 			ft_strrchr.c \
+			ft_strcmp.c \
+			ft_strncmp.c \
 			ft_strcpy.c \
 			ft_strncpy.c \
 			ft_strdup.c \
 			ft_strlen.c \
+			ft_strstr.c \
+			ft_strnstr.c \
 
 SRCS = $(addprefix $(SRCSDIR), $(SRCSLIST))
 
