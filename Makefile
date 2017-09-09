@@ -6,7 +6,7 @@
 #    By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/30 09:48:52 by mcassar           #+#    #+#              #
-#    Updated: 2017/09/09 13:59:01 by mcassar          ###   ########.fr        #
+#    Updated: 2017/09/09 14:34:32 by mcassar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,9 +45,13 @@ SRCSLIST =	ft_atoi.c \
 			ft_strncpy.c \
 			ft_strdel.c \
 			ft_strdup.c \
+			ft_strequ.c \
+			ft_strnequ.c \
 			ft_striter.c \
 			ft_striteri.c \
 			ft_strlen.c \
+			ft_strmap.c \
+			ft_strmapi.c \
 			ft_strnew.c \
 			ft_strstr.c \
 			ft_strnstr.c \
