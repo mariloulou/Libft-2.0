@@ -6,14 +6,14 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/06 10:03:09 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/06 10:22:43 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/06 14:30:49 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
 	if (*s1 == '\0' && *s2 == '\0')
-		return(0);
+		return (0);
 	while (*s1 && *s2 && *s1 == *s2)
 	{
 		s1++;

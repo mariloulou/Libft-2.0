@@ -1,34 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/06 11:31:02 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/06 14:40:48 by mcassar          ###   ########.fr       */
+/*   Created: 2017/09/06 14:41:43 by mcassar           #+#    #+#             */
+/*   Updated: 2017/09/06 14:45:27 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+int	ft_isalpha(int c)
 {
-	int n;
-	int ret;
-
-	ret = 0;
-	while ((*str >= 9 && *str <= 13) || *str == 32 || *str == '+')
-		str++;
-	if (*str == '-')
-	{
-		n = 1;
-		str++;
-	}
-	while (*str >= '0' && *str <= '9')
-	{
-		ret = (ret * 10) + (*str - 48);
-		str++;
-	}
-	if (n == 1)
-		return (-ret);
-	return (ret);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return(1);
+	return(0);
 }

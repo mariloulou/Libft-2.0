@@ -1,34 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/06 11:31:02 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/06 14:40:48 by mcassar          ###   ########.fr       */
+/*   Created: 2017/09/09 13:09:57 by mcassar           #+#    #+#             */
+/*   Updated: 2017/09/09 13:22:10 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
-{
-	int n;
-	int ret;
+#include "../headers/libft.h"
 
-	ret = 0;
-	while ((*str >= 9 && *str <= 13) || *str == 32 || *str == '+')
-		str++;
-	if (*str == '-')
-	{
-		n = 1;
-		str++;
-	}
-	while (*str >= '0' && *str <= '9')
-	{
-		ret = (ret * 10) + (*str - 48);
-		str++;
-	}
-	if (n == 1)
-		return (-ret);
-	return (ret);
+void	ft_memdel(void **ap)
+{
+	if (ap == NULL)
+		return ;
+	free(*ap);
+	*ap = NULL;
 }

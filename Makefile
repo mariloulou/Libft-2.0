@@ -6,7 +6,7 @@
 #    By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/30 09:48:52 by mcassar           #+#    #+#              #
-#    Updated: 2017/09/06 13:04:54 by mcassar          ###   ########.fr        #
+#    Updated: 2017/09/09 13:25:42 by mcassar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,11 +17,18 @@ SRCSDIR = srcs/
 SRCSLIST =	ft_atoi.c \
 			ft_bitoi.c \
 			ft_bzero.c \
+			ft_isalnum.c \
+			ft_isalpha.c \
+			ft_isascii.c \
+			ft_isdigit.c \
+			ft_isprint.c \
 			ft_itoa_base.c \
+			ft_memalloc.c \
 			ft_memchr.c \
 			ft_memcmp.c \
 			ft_memcpy.c \
 			ft_memccpy.c \
+			ft_memdel.c \
 			ft_memmove.c \
 			ft_memset.c \
 			ft_putchar.c \
@@ -37,8 +44,11 @@ SRCSLIST =	ft_atoi.c \
 			ft_strncpy.c \
 			ft_strdup.c \
 			ft_strlen.c \
+			ft_strnew.c \
 			ft_strstr.c \
 			ft_strnstr.c \
+			ft_tolower.c \
+			ft_toupper.c \
 
 SRCS = $(addprefix $(SRCSDIR), $(SRCSLIST))
 
