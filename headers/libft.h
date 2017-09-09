@@ -6,7 +6,7 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/22 08:17:11 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/09 15:37:45 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/09 16:54:20 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ void	ft_bzero(char *s, size_t n);
 void	ft_memdel(void **ap);
 void	ft_putchar(char c);
 void	ft_putchar_unicode(wchar_t c);
+void	ft_putendl(char *str);
+void	ft_putstr(char *str);
 void	ft_strclr(char *s);
 void	ft_strdel(char **as);
 void	ft_striter(char *s, void (*f)(char *));

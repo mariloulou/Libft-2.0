@@ -6,12 +6,11 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/09 15:36:34 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/09 16:42:42 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/09 16:52:25 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../headers/libft.h"
-#include <stdio.h>
 
 static int	ft_begin(char const *s)
 {
@@ -45,6 +44,8 @@ char		*ft_strtrim(char const *s)
 	int						i;
 	char					*ret;
 
+	if (!s)
+		return (0);
 	b = ft_begin(s);
 	if (s[b] == '\0')
 		return (ft_strnew(1));
