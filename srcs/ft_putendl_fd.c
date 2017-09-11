@@ -1,24 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   xmain.c                                            :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/30 11:13:22 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/11 09:29:58 by mcassar          ###   ########.fr       */
+/*   Created: 2017/09/11 10:47:05 by mcassar           #+#    #+#             */
+/*   Updated: 2017/09/11 10:49:07 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include "headers/libft.h"
-#include <stdio.h>
+#include "../headers/libft.h"
 
-int	main(void)
+void	ft_putendl_fd(char *str, int fd)
 {
-	char *str;
-
-		str = ft_itoa(123456789);
-		free(str);
-	while(1);
+	ft_putstr_fd(str, fd);
+	ft_putchar_fd('\n', fd);
 }
