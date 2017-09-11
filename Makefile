@@ -6,7 +6,7 @@
 #    By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/30 09:48:52 by mcassar           #+#    #+#              #
-#    Updated: 2017/09/11 10:52:36 by mcassar          ###   ########.fr        #
+#    Updated: 2017/09/11 16:20:47 by mcassar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,12 @@ SRCSLIST =	ft_atoi.c \
 			ft_isprint.c \
 			ft_itoa.c \
 			ft_itoa_base.c \
+			ft_lstadd.c \
+			ft_lstdel.c \
+			ft_lstdelone.c \
+			ft_lstiter.c \
+			ft_lstmap.c \
+			ft_lstnew.c \
 			ft_memalloc.c \
 			ft_memccpy.c \
 			ft_memchr.c \

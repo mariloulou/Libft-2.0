@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/09 13:37:15 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/11 14:45:54 by mcassar          ###   ########.fr       */
+/*   Created: 2017/09/11 15:04:31 by mcassar           #+#    #+#             */
+/*   Updated: 2017/09/11 16:26:05 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_striter(char *s, void (*f)(char *))
-{
-	int i;
+#include "../headers/libft.h"
 
-	i = 0;
-	if (!s || !f)
-		return ;
-	while (s[i])
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+{
+	t_list *new;
+	t_list *list;
+
+	if (!lst)
+		return(NULL);
+	list = f(lst);
+	new = list;
+	while (lst->next)
 	{
-		f(&s[i]);
-		i++;
+		lst = lst->next;
+		if (!(list->next = f(lst)))
+		{
+			free(list->next);
+			return(NULL);
+		}
+		list = list->next;
 	}
+	return(new);
 }

@@ -6,7 +6,7 @@
 /*   By: mcassar <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 09:37:46 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/11 08:36:51 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/11 11:02:43 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strndup(const char *s1, size_t n)
 	char					*s2;
 
 	j = 0;
-	if (!s1)
-		return (NULL);
 	s2 = (char *)malloc(sizeof(char) * (n + 1));
 	if (!s2)
 		return (NULL);

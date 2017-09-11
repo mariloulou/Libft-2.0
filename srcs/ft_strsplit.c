@@ -6,7 +6,7 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/10 08:42:33 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/11 09:20:52 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/11 15:27:03 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static size_t	ft_size(char const *s, char c, int i)
 	return (ret);
 }
 
-char			**ft_tabwrite(char **tab, char c, char const *s)
+static char		**ft_tabwrite(char **tab, char c, char const *s)
 {
 	int		i;
 	int		t1;

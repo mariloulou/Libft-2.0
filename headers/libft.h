@@ -6,7 +6,7 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/22 08:17:11 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/11 10:52:23 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/11 16:20:25 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,13 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
+
+typedef struct		s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;
 
 int		ft_atoi(char *str);
 int		ft_isalnum(int c);
@@ -55,6 +62,10 @@ size_t	ft_strlen(const char *s);
 
 void	ft_bitoi(char **tab, int nb);
 void	ft_bzero(char *s, size_t n);
+void	ft_lstadd(t_list **alst, t_list *new);
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void	ft_memdel(void **ap);
 void	ft_putchar(char c);
 void	ft_putchar_fd(char c, int fd);
@@ -75,5 +86,8 @@ void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(char *str, int c, size_t n);
+
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+t_list	*ft_lstnew(void const *content, size_t content_size);
 
 #endif

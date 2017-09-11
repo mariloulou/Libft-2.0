@@ -6,7 +6,7 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/10 14:56:32 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/11 08:36:37 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/11 13:59:51 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int		ft_mallocsize(int c, int min)
 	return (i);
 }
 
-char			*ft_ex(int c)
+static char		*ft_ex(int c)
 {
 	if (c == 0)
 		return (ft_strdup("0"));
