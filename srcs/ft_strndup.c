@@ -6,28 +6,24 @@
 /*   By: mcassar <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 09:37:46 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/10 16:24:47 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/11 08:36:51 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char	*ft_strdup(const char *s1)
+char	*ft_strndup(const char *s1, size_t n)
 {
-	int		i;
-	int		j;
-	char	*s2;
+	unsigned long int		j;
+	char					*s2;
 
-	i = 0;
 	j = 0;
-	while (s1[i])
-		i++;
 	if (!s1)
 		return (NULL);
-	s2 = (char *)malloc(sizeof(char) * (i + 1));
+	s2 = (char *)malloc(sizeof(char) * (n + 1));
 	if (!s2)
 		return (NULL);
-	while (j < i)
+	while (j < n)
 	{
 		s2[j] = s1[j];
 		j++;

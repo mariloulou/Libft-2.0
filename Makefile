@@ -6,7 +6,7 @@
 #    By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/30 09:48:52 by mcassar           #+#    #+#              #
-#    Updated: 2017/09/09 16:54:31 by mcassar          ###   ########.fr        #
+#    Updated: 2017/09/10 15:42:27 by mcassar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRCSLIST =	ft_atoi.c \
 			ft_isascii.c \
 			ft_isdigit.c \
 			ft_isprint.c \
+			ft_itoa.c \
 			ft_itoa_base.c \
 			ft_memalloc.c \
 			ft_memccpy.c \
@@ -53,13 +54,17 @@ SRCSLIST =	ft_atoi.c \
 			ft_strncat.c \
 			ft_strncmp.c \
 			ft_strncpy.c \
+			ft_strndup.c \
 			ft_strnequ.c \
 			ft_strnew.c \
 			ft_strnstr.c \
 			ft_strrchr.c \
+			ft_strrev.c \
+			ft_strsplit.c \
 			ft_strstr.c \
 			ft_strsub.c \
 			ft_strtrim.c \
+			ft_swap.c \
 			ft_tolower.c \
 			ft_toupper.c \
 
@@ -89,3 +94,10 @@ fclean:
 	@printf "\e[0;32mFclean rule Done !\n"
 
 re: fclean all
+
+exe: re
+	@gcc xmain.c libft.a
+	@printf "\e[0mExecution :\n"
+	@printf "\e[0m-------------------------\n"
+	@./a.out
+	@printf "\e[0m-------------------------\n"

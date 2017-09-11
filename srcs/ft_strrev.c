@@ -1,37 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcassar <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/09 09:37:46 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/10 16:24:47 by mcassar          ###   ########.fr       */
+/*   Created: 2017/09/10 14:59:44 by mcassar           #+#    #+#             */
+/*   Updated: 2017/09/10 16:23:21 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "../headers/libft.h"
 
-char	*ft_strdup(const char *s1)
+char	*ft_strrev(char *s)
 {
 	int		i;
 	int		j;
-	char	*s2;
+	char	t;
 
 	i = 0;
-	j = 0;
-	while (s1[i])
-		i++;
-	if (!s1)
-		return (NULL);
-	s2 = (char *)malloc(sizeof(char) * (i + 1));
-	if (!s2)
-		return (NULL);
-	while (j < i)
+	j = ft_strlen(s) - 1;
+	while (i < j)
 	{
-		s2[j] = s1[j];
-		j++;
+		t = s[i];
+		s[i] = s[j];
+		s[j] = t;
+		i++;
+		j--;
 	}
-	s2[j] = '\0';
-	return (s2);
+	return (s);
 }

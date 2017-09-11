@@ -6,7 +6,7 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/22 08:17:11 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/09 16:54:20 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/10 15:42:15 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
+char	*ft_itoa(int nb);
 char	*ft_itoa_base(int nb, int base);
 char	*ft_strcat(char *s1, const char *s2);
 char	*ft_strcpy(char *dst, const char *src);
@@ -40,11 +41,15 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strncpy(char *dst, const char *src, size_t n);
+char	*ft_strndup(const char *s1, size_t len);
 char	*ft_strnew(size_t size);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+char	*ft_strrev(char *s);
 char	*ft_strstr(const char *big, const char *little);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s);
+
+char	**ft_strsplit(char const *s, char c);
 
 size_t	ft_strlen(const char *s);
 
