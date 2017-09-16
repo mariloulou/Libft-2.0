@@ -6,11 +6,11 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/02 12:57:22 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/03 08:38:48 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/12 08:14:49 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+#include "../includes/libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {

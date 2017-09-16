@@ -6,11 +6,17 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/11 13:24:20 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/11 13:59:34 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/16 08:53:27 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+#include "../includes/libft.h"
+
+/*
+**		FT_LSTNEW
+**		The ft_lstnew function creates a new link.
+**		- t_list *s	= The new malloced link.
+*/
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {

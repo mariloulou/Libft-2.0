@@ -6,11 +6,11 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/11 10:47:05 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/11 10:49:07 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/12 08:12:53 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+#include "../includes/libft.h"
 
 void	ft_putendl_fd(char *str, int fd)
 {

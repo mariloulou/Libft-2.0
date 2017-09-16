@@ -6,11 +6,11 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/10 14:59:44 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/10 16:23:21 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/12 08:08:27 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strrev(char *s)
 {

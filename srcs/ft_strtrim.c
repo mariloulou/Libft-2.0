@@ -6,11 +6,11 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/09 15:36:34 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/10 10:51:58 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/12 08:08:10 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+#include "../includes/libft.h"
 
 static int	ft_begin(char const *s)
 {

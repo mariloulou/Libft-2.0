@@ -6,11 +6,11 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/11 09:23:28 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/11 09:38:07 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/12 08:15:21 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+#include "../includes/libft.h"
 
 void	ft_putnbr(int c)
 {

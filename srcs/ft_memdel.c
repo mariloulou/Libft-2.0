@@ -6,11 +6,11 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/09 13:09:57 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/09 13:22:10 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/12 08:14:58 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+#include "../includes/libft.h"
 
 void	ft_memdel(void **ap)
 {

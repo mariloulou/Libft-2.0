@@ -6,11 +6,11 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/04 01:40:07 by mcassar           #+#    #+#             */
-/*   Updated: 2017/08/30 14:35:00 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/12 08:14:23 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+#include "../includes/libft.h"
 
 /*
 **	ft_wichmask decides on wich mask to use, depending on the size of the

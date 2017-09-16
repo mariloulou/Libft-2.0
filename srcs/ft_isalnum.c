@@ -6,11 +6,17 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/06 14:47:33 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/06 14:50:41 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/13 14:59:54 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+/*
+**		FT_ISALNUM
+**		The ft_isalnum function tests for any character for which
+**			ft_isalpha of ft_isdigit is true.
+*/
+
+#include "../includes/libft.h"
 
 int	ft_isalnum(int c)
 {

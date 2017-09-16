@@ -6,12 +6,11 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/10 08:42:33 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/11 15:27:03 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/12 08:09:09 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
-#include <stdio.h>
+#include "../includes/libft.h"
 
 static int		ft_split(char const *s, char c)
 {

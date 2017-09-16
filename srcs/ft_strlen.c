@@ -6,11 +6,11 @@
 /*   By: mcassar <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 09:31:10 by mcassar           #+#    #+#             */
-/*   Updated: 2017/08/30 12:54:28 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/12 08:11:18 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+#include "../includes/libft.h"
 
 size_t		ft_strlen(const char *s)
 {

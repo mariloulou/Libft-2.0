@@ -6,11 +6,11 @@
 /*   By: mcassar <mcassar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/09 14:37:10 by mcassar           #+#    #+#             */
-/*   Updated: 2017/09/09 16:42:29 by mcassar          ###   ########.fr       */
+/*   Updated: 2017/09/12 08:08:54 by mcassar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../headers/libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
